@@ -56,7 +56,7 @@
               <p>
                 In the vibrant heart of Singapore, where opportunity and prosperity often grace the lives of the fortunate,
                 we discovered a hidden truth: the untapped brilliance within low-income families yearning for a chance to shine.
-                In this city, like many others, educational inequality casts a shadow over the dreams of many children
+                In this city, like many others, educational inequality casts a shadow over the dreams of many children.
                               
                 <br><br>
                 In response, we set forth on a mission called "Bridging Dreams." We envisioned a Singapore where every child,

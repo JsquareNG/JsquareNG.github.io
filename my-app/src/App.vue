@@ -2,7 +2,7 @@
   
   <div v-if="!isLoggedIn">
     <nav class="navbar navbar-expand-lg fixed-top shadow custom-navbar" id="nav_bar">
-        <!-- <div class="container"> -->
+        <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" id="logo" href="/">
               <img src="./assets/bridgingdreamslogo.png" alt="bridgingDreamsLogo" width="75" height="60" style="outline: none;">
@@ -22,7 +22,7 @@
           
             </ul>
           </div>
-        <!-- </div> -->
+        </div>
     </nav>
   </div>
   <div v-else>
