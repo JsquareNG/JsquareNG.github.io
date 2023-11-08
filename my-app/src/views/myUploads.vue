@@ -95,7 +95,6 @@
 import { db , auth,storage } from '/src/firebase/init.js'
 import {ref, deleteObject, uploadBytes, getDownloadURL} from 'firebase/storage'
 import {collection, onSnapshot, where, query, doc, deleteDoc, addDoc} from 'firebase/firestore'
-// import VueToastify from 'vue-toastify'
 
 export default {
     data() {
@@ -118,12 +117,8 @@ export default {
             userID: null
         }
     },
-    // components: {
-    //     VueToastify
-    // },
     methods: {
         async getResources() {
-            
             onSnapshot(query(collection(db,'resource'), where('uid', '==', this.userID)), (snap) => {
                 this.profiles = []
                 snap.forEach((doc) => { 
@@ -143,7 +138,6 @@ export default {
             },
     
         uploadFile: function() {
-            console.log("hi")
             const storageRef = ref(storage, 'resource/' + this.form.title +".pdf")
             
             uploadBytes(storageRef, this.$refs.fileName.files[0])
@@ -164,11 +158,11 @@ export default {
                 alert("File Uploaded Successfully")
             })
             .then(() => {
-                this.form.title = '',
-                this.$refs.fileName = '',
-                this.$refs.fileName.value = '',
-                this.form.type = '',
-                this.form.subjectLevel = '',
+                this.form.title = ''
+                this.$refs.fileName = ''
+                this.$refs.fileName.value = ''
+                this.form.type = ''
+                this.form.subjectLevel = ''
                 this.form.selectedSubject = ''
            
             })
