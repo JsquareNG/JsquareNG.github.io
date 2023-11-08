@@ -78,14 +78,14 @@
     </header>  
     <main class="container">
       <section id="casual-shoes" class="mt-5">
-        <h2 id="title2" style="text-align: center">Our Highlight</h2>
+        <h2 id="title2" style="text-align: center">Our Highlights</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col-lg-4 col-md-6">
             <div class="card h-100 shadow custom-card">
               <img src="../assets/intro_photo_6.jpg" class="card-img-top w-100 custom-bg" alt="...">
               <div class="card-body">
-                <h4 class="card-title" style="text-align: center">One to One Session</h4>
-                <p class="card-text" style="text-align: center">Recevice one to one tuition session from our volunteering tutors</p>
+                <h4 class="card-title" style="text-align: center">One-to-One Sessions</h4>
+                <p class="card-text" style="text-align: center">Receive one-to-one tuition sessions from our volunteer tutors</p>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@
               <img src="../assets/intro_photo_3.jpg" class="card-img-top w-100 custom-bg" alt="...">
               <div class="card-body">
                 <h4 class="card-title" style="text-align: center">Learning Resources</h4>
-                <p class="card-text" style="text-align: center">A well-organised collection educational resources catering to all primary and secondary levels</p>
+                <p class="card-text" style="text-align: center">A well-organised collection of educational resources catering to all Primary and Secondary levels</p>
               </div>
             </div>
           </div>
@@ -102,8 +102,8 @@
             <div class="card h-100 shadow custom-card">
               <img src="../assets/intro_photo_2.jpg" class="card-img-top w-100 custom-bg" alt="...">
               <div class="card-body">
-                <h4 class="card-title" style="text-align: center">Efficient Booking Sytem</h4>
-                <p class="card-text" style="text-align: center">An easy-to-use booking system to allow parents to select tuition session on their preference</p>
+                <h4 class="card-title" style="text-align: center">Efficient Booking System</h4>
+                <p class="card-text" style="text-align: center">An easy-to-use booking system that allows parents to select tuition sessions based on their preferences</p>
               </div>
             </div>
           </div>
