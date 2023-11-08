@@ -53,7 +53,9 @@
                     </li>
                     <li class="nav-item">
                         <!-- <router-link to="/" class="nav-link font-weight-bold" aria-current="page"  style="font-size: 20px; color: #007bff; font-weight: bold">Sign Out</router-link> -->
-                        <button @click="signOut()" class="nav-link font-weight-bold" style="font-size: 20px; color: #007bff; font-weight: bold" >Log Out</button>
+                        <!-- <button @click="signOut()" class="nav-link font-weight-bold" style="font-size: 20px; color: #007bff; font-weight: bold" >Log Out</button> -->
+                        <router-link to="/" class="nav-link font-weight-bold" aria-current="page" style="font-size: 20px; color: #007bff; font-weight: bold" @click="signOut">Log Out</router-link>
+
                     </li>
                 </ul>
             </div>
