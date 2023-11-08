@@ -145,7 +145,7 @@
                             <div class="card-content">
                                 <h1 class="name text-dark">{{tutor.name}}</h1>
                                 <div class="subjects text-center">
-                                    <p>I'm efficient in teaching:</p>
+                                    <p>I'm efficient in teaching</p>
                                     <button class="btn btn-warning m-1" disabled v-for="subject in tutor.subjects" :key="subject">
                                         {{subject}}
                                     </button>
