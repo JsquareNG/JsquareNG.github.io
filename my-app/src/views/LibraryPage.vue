@@ -159,6 +159,7 @@ export default {
         },
 
         getResource(){
+            this.getAllResources = []
             const resourceRef = collection(db,'resource')
             let filtered = query(resourceRef)
 
@@ -249,7 +250,7 @@ export default {
         }
         this.getUsers()
         this.writeLoop()
-        this.getResource()
+        
         
     },
     computed: {
