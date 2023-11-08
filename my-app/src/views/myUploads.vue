@@ -107,7 +107,6 @@ export default {
                 subjectLevel: '',
                 selectedSubject: '',
                 file_url: ''
-                 
             },
             subjectsOptions: {
                 'Primary School': ['English', 'Math', 'Science', 'Chinese', 'Higher Chinese'],
@@ -156,15 +155,12 @@ export default {
                     uid: this.userID
                 })
                 alert("File Uploaded Successfully")
-            })
-            .then(() => {
                 this.form.title = ''
                 this.$refs.fileName = ''
                 this.$refs.fileName.value = ''
                 this.form.type = ''
                 this.form.subjectLevel = ''
                 this.form.selectedSubject = ''
-           
             })
         },
     }
