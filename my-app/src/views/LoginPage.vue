@@ -13,7 +13,7 @@
         <div class="img-left d-none d-md-flex"></div>
         <div class="card-body">
           <h3 class="title text-center mt-4 font-weight-bold">
-            Login
+            <strong>Login</strong>
           </h3>
           <form class="form-box px-3" @submit.prevent="login">
             <div class="form-input">
