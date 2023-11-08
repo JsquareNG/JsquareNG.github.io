@@ -47,7 +47,7 @@
                 <div class="col-md-8 col-10 z-index-3">
                     <div class="p-3 border mb-3 bg-white border rounded-custom shadowed-container">
                         <h3 class="text-center">Upload a File</h3>
-                        <form @submit.prevent="uploadFile">
+                        <form>
                             <div class="mb-3">
                                 <label for="title" class="form-label">Title</label>
                                 <input type="text" v-model="form.title" class="form-control" id="title" name="title" required>
@@ -79,7 +79,7 @@
                                 </select>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary">Upload</button>
+                                <button type="button" @click="uploadFile" class="btn btn-primary">Upload</button>
                             </div>
                         </form>
                     </div>
