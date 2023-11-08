@@ -146,7 +146,7 @@
                                             </select>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="submit"  class="btn btn-success" data-bs-dismiss="modal">Create</button>
+                                            <button type="submit"  class="btn btn-success" >Create</button>
                                         </div>
                                     </form>
                                 </div>
