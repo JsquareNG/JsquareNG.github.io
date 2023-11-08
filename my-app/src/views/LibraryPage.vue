@@ -155,8 +155,8 @@ export default {
             const queryRef = query(
                 resourceRef,
                 orderBy('level'),
-                // orderBy('subject'),
-                // orderBy('type'),
+                orderBy('subject'),
+                orderBy('type'),
                 // orderBy('title')
             );
 
