@@ -4,7 +4,7 @@
     <nav class="navbar navbar-expand-lg fixed-top shadow custom-navbar" id="nav_bar">
         <!-- <div class="container"> -->
           <div class="navbar-header">
-            <a class="navbar-brand ms-md-5" id="logo" href="/">
+            <a class="navbar-brand" id="logo" href="/">
               <img src="./assets/bridgingdreamslogo.png" alt="bridgingDreamsLogo" width="75" height="60" style="outline: none;">
             </a>
           </div>
