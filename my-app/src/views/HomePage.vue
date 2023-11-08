@@ -550,6 +550,7 @@ export default {
 
                         }
                     }
+                    this.filteredTutors = []
 
                     // if (this.filter.subject === 'any' || tutorData.subjects.includes(this.filter.subject)) {
                         // if (typeof window.google !== "undefined" && typeof window.google.maps !== "undefined") {
