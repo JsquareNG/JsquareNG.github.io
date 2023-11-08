@@ -221,13 +221,13 @@ export default {
         box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
     }
 
-    .navbar-brand {
+    /* .navbar-brand {
         margin-right: 20px;
     }
 
     .navbar-nav {
         margin-left: auto;
-    }
+    } */
 
     .navbar-nav li {
     padding: 0 10px; /* Add padding to create a gap between nav items */
