@@ -78,7 +78,7 @@
                             <div class="card-content">
                                 <h3 class="name text-dark">{{tutor.name}}</h3>
                                 <div class="subjects text-center">
-                                    <p>I'm efficient in teaching:</p>
+                                    <p>I'm efficient in teaching</p>
                                     <button class="btn btn-warning m-1" style="font-size: 14px;" disabled v-for="subject in tutor.subjects" :key="subject">
                                         {{subject}}
                                     </button>
@@ -135,7 +135,7 @@
                     <div v-else class="row p-3 justify-content-around text-center">
                         <h4 style="font-weight: bold">Our Filtered Results</h4>
                         <div class="col-lg-3 col-md-5 col-12 my-3" v-for="tutor in filteredTutors" :key="tutor.userID">
-                            <div class="card-display my-3">
+                            <div class="card-display">
                             <div class="image-content">
                                 <span class="overlay"></span>
                                 <div class="card-image">
