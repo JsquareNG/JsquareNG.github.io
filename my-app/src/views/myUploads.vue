@@ -155,12 +155,12 @@ export default {
                     uid: this.userID
                 })
                 alert("File Uploaded Successfully")
-                this.form.title = ''
-                this.$refs.fileName = ''
-                this.$refs.fileName.value = ''
-                this.form.type = ''
-                this.form.subjectLevel = ''
-                this.form.selectedSubject = ''
+                this.form.title = '';
+                this.$refs.fileName = '';
+                this.$refs.fileName.value = '';
+                this.form.type = '';
+                this.form.subjectLevel = '';
+                this.form.selectedSubject = '';
             })
         },
     }
