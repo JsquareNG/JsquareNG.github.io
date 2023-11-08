@@ -33,7 +33,7 @@
 
             <div class="text-right">
               <a href="#" class="forget-link">
-                Forget Password?
+                Forgot Password?
               </a>
             </div>
 
