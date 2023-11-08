@@ -78,7 +78,7 @@
                             <div class="card-content">
                                 <h3 class="name text-dark">{{tutor.name}}</h3>
                                 <div class="subjects text-center">
-                                    <h6 >I'm efficient in teaching:</h6>
+                                    <p>I'm efficient in teaching:</p>
                                     <button class="btn btn-warning m-1" style="font-size: 14px;" disabled v-for="subject in tutor.subjects" :key="subject">
                                         {{subject}}
                                     </button>
@@ -145,7 +145,7 @@
                             <div class="card-content">
                                 <h1 class="name text-dark">{{tutor.name}}</h1>
                                 <div class="subjects text-center">
-                                    <h5 >I'm efficient in teaching:</h5>
+                                    <p>I'm efficient in teaching:</p>
                                     <button class="btn btn-warning m-1" disabled v-for="subject in tutor.subjects" :key="subject">
                                         {{subject}}
                                     </button>
