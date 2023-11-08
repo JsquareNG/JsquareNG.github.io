@@ -95,7 +95,7 @@
 import { db , auth,storage } from '/src/firebase/init.js'
 import {ref, deleteObject, uploadBytes, getDownloadURL} from 'firebase/storage'
 import {collection, onSnapshot, where, query, doc, deleteDoc, addDoc} from 'firebase/firestore'
-
+import VueToastify from 'vue-toastify'
 
 export default {
     data() {
@@ -118,6 +118,9 @@ export default {
             userID: null
         }
     },
+    components: {
+        VueToastify
+    },
     methods: {
         async getResources() {
             
@@ -135,7 +138,8 @@ export default {
                     await deleteDoc(doc(db, "resource", id));
                     const desertRef = ref(storage, 'resource/' + title + ".pdf");
                     deleteObject(desertRef)
-                    alert("File Successfully Deleted!")
+                    // alert("File Successfully Deleted!")
+                    this.$toast.sucess('This is a success toast')
                 
             },
     
