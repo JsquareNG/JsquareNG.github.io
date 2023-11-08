@@ -129,7 +129,7 @@
                                         <h5 class="modal-title" id="staticBackdropLabel">Create Listing </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <form >
+                                    <form @submit="addNewListing">
                                         <div class="modal-body">
                                             <label class="form-label" for="preferredDate">Date</label>
                                             <input v-model="form.date" class="form-control" type="date" id="preferredDate" name="preferredDate" required>
@@ -146,7 +146,7 @@
                                             </select>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" @click="addNewListing" class="btn btn-success" data-bs-dismiss="modal">Create</button>
+                                            <button type="button"  class="btn btn-success" data-bs-dismiss="modal">Create</button>
                                         </div>
                                     </form>
                                 </div>
@@ -267,7 +267,8 @@ import { db , auth} from '/src/firebase/init.js'
         },
         methods: {
             
-            addNewListing: function() {
+            addNewListing(event) {
+                event.preventDefault()
                 var selectedDate = new Date(this.form.date)
                 var newDate = selectedDate.toLocaleDateString(undefined,this.options)
 
