@@ -155,8 +155,8 @@ export default {
                 })
                 alert("File Uploaded Successfully")
                 this.form.title = '';
-                this.$refs.fileName = '';
-                // this.$refs.fileName.value = '';
+                // this.$refs.fileName = '';
+                this.$refs.fileName.value = '';
                 // this.file.url = '';
                 this.form.type = '';
                 this.form.subjectLevel = '';
