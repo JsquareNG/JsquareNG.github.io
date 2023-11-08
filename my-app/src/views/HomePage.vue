@@ -56,7 +56,7 @@
 
 
     <div class="container-fluid my-5">
-        <div class="row py-2 mx-2 justify-content-around">
+        <div class="row py-2 mx-2 justify-content-center">
             <!-- START HERE -->
             <div class="col-lg-9 col-sm-12 py-1 bg-light border tutor-display mt-2 me-3">
                 <div v-if="!filteredButton">
@@ -65,7 +65,7 @@
                         <h4>Sorry, we don't have any tutors who match your preferences!</h4>
                         <p> Please try again later.</p>
                     </div>
-                    <div v-else class="row px-1 justify-content-around text-center">
+                    <div v-else class="row  justify-content-around text-center">
                         <h4 style="font-weight: bold">Our Recommended Tutors</h4>
                         <div class="col-lg-3 col-md-5 col-12 my-3" v-for="tutor in recommendedTutors" :key="tutor.userID">
                             <div class="card-display my-3">
