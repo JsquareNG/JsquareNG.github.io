@@ -153,12 +153,14 @@ export default {
             this.initialResources = []
             const resourceRef = collection(db,'resource')
             const queryRef = query(
-                resourceRef,
-                orderBy('level'),
-                // orderBy('subject'),
-                // orderBy('type'),
-                // orderBy('title')
-            );
+        resourceRef,
+        orderBy('level', 'asc', value => {
+            if (value === 'primary') return 0;
+            if (value === 'lower sec') return 1;
+            if (value === 'upper sec') return 2;
+            return 3; // If there are other values, place them at the end
+            })
+        );
 
             onSnapshot(queryRef, (snap) => {
                 snap.forEach((doc) => {
