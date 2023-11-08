@@ -147,32 +147,20 @@ export default {
         }
     },
     methods: {
-        async getUsers() {
-            onSnapshot(query(collection(db,'resource')), (snap) => {
-                this.profile = [];
-                snap.forEach((doc) => {
-                    if(doc.exists()) {
-                        this.profile.push(doc.data())
-                    }
-                })
-            })
-           
-        },
+        
 
         getResource(){
             this.initialResources = []
             const resourceRef = collection(db,'resource')
-            let filtered = query(resourceRef)
+            const queryRef = query(
+                resourceRef,
+                orderBy('level'),
+                orderBy('subject'),
+                orderBy('type'),
+                orderBy('title')
+            );
 
-            // filtered = query(
-            //     filtered,
-            //     orderBy('level'),
-            //     orderBy('subject'),
-            //     orderBy('type'),
-            //     orderBy('title')
-            // );
-
-            onSnapshot(filtered, (snap) => {
+            onSnapshot(queryRef, (snap) => {
                 snap.forEach((doc) => {
                     this.initialResources.push(doc.data())
                 })
@@ -249,7 +237,6 @@ export default {
         if(user){
             this.name = user.uid
         }
-        this.getUsers()
         this.writeLoop()
         
         
