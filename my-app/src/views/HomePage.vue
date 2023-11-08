@@ -56,7 +56,7 @@
 
 
     <div class="container my-5">
-        <div class="row p mx-2 justify-content-around">
+        <div class="row py-2 mx-2 justify-content-around">
             <!-- START HERE -->
             <div class="col-lg-9 col-sm-12 py-1 bg-light border tutor-display mt-2 me-3">
                 <div v-if="!filteredButton">
@@ -76,9 +76,9 @@
                                 </div>
                             </div>
                             <div class="card-content">
-                                <h1 class="name text-dark">{{tutor.name}}</h1>
+                                <h3 class="name text-dark">{{tutor.name}}</h3>
                                 <div class="subjects text-center">
-                                    <h5 >I'm efficient in teaching:</h5>
+                                    <h6 >I'm efficient in teaching:</h6>
                                     <button class="btn btn-warning m-1" style="font-size: 14px;" disabled v-for="subject in tutor.subjects" :key="subject">
                                         {{subject}}
                                     </button>
