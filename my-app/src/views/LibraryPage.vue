@@ -156,7 +156,7 @@ export default {
                 resourceRef,
                 orderBy('level'),
                 orderBy('subject'),
-                orderBy('type'),
+                // orderBy('type'),
                 // orderBy('title')
             );
 
