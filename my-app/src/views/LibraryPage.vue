@@ -164,13 +164,13 @@ export default {
             const resourceRef = collection(db,'resource')
             let filtered = query(resourceRef)
 
-            filtered = query(
-                filtered,
-                orderBy('level'),
-                orderBy('subject'),
-                orderBy('type'),
-                orderBy('title')
-            );
+            // filtered = query(
+            //     filtered,
+            //     orderBy('level'),
+            //     orderBy('subject'),
+            //     orderBy('type'),
+            //     orderBy('title')
+            // );
 
             onSnapshot(filtered, (snap) => {
                 snap.forEach((doc) => {
