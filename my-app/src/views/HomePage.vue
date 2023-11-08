@@ -223,7 +223,7 @@
                                 <div v-if="request.status == 'rejected'" class="container-fluid" style="border-radius: 25px;">
                                     <h6 class="text-danger ">REJECTED</h6>
                                     <div class="d-flex justify-content-center">
-                                        <button @click="removeRequest(request.id)" class="btn btn-primary">Acknowledge</button>
+                                        <button @click="removeRequest(request.id)" class="btn btn-primary btn-sm py-1">Acknowledge</button>
                                     </div>
                                 </div>
                             </div>

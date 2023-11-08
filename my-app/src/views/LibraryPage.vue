@@ -39,7 +39,7 @@
                             </div>
                             <div class="col-md-3 col-11 mt-1">
                                 <!-- <label for="documentType" class="form-label">Document Type</label> -->
-                                <select id="documentType" class="form-select form-select-lg form-field filter-right border border-warning border-4 shadow-none" v-model="filter.type">
+                                <select id="documentType" class="form-select form-select-lg form-field border border-warning border-4 shadow-none" v-model="filter.type">
                                     <option value="" disabled style="color: #888;">Document Type</option>
                                     <option value="any">Any</option>
                                     <option value="Lecture Notes">Lecture Notes</option>
