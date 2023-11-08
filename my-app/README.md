@@ -1,24 +1,19 @@
-# my-app
+# JsquareNG.github.io
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+// Insert this link into your search bar to enter our page
+Landing Page: https://jsquare-ng-github-io.vercel.app/
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Parent Interface:
+Username: test123@gmail.com
+Password: test123
+
+Tutor Interface:
+Username: test234@gmail.com
+Password: test234
+
+2nd Account (Tutor):
+Username: test000@gmail.com
+Password: test000
