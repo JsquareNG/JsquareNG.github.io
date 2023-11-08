@@ -157,7 +157,7 @@ export default {
                 this.form.title = '';
                 // this.$refs.fileName = '';
                 // this.$refs.fileName.value = '';
-                this.file.url = '';
+                // this.file.url = '';
                 this.form.type = '';
                 this.form.subjectLevel = '';
                 this.form.selectedSubject = '';
