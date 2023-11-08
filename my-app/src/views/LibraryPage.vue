@@ -71,7 +71,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="result in getAllResources" :key="result.uid">
+                <tr v-for="result in initialResources" :key="result.uid">
                     <td>{{ result.level }}</td>
                     <td>{{ result.subject }}</td>
                     <td>{{ result.type }}</td>
@@ -132,6 +132,7 @@ export default {
                 type: '',
 
             },
+            profile: [],
             text: '',
             sleepTime: 100,
             curPhraseIndex: 0,
@@ -142,7 +143,7 @@ export default {
                 'Upper Secondary': ['English', 'E Math', 'A Math', 'Chinese', 'Physics', 'Chemistry', 'Biology', 'History', 'Geography', 'Social Studies', 'POA', 'Literature'],
             },
             filteredResults: [],
-            getAllResources: []
+            initialResources: []
         }
     },
     methods: {
@@ -159,7 +160,7 @@ export default {
         },
 
         getResource(){
-            this.getAllResources = []
+            this.initialResources = []
             const resourceRef = collection(db,'resource')
             let filtered = query(resourceRef)
 
@@ -173,7 +174,7 @@ export default {
 
             onSnapshot(filtered, (snap) => {
                 snap.forEach((doc) => {
-                    this.getAllResources.push(doc.data())
+                    this.initialResources.push(doc.data())
                 })
             })
 
