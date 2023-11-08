@@ -519,16 +519,15 @@ export default {
                             if(this.filter.distance === ""){
                                 tutorData.distanceBetween = distance;
                                 this.getTuitionTimeslots(tutorData);
-                                this.filteredTutors = []
                             }
                             else{
                                 if(distance <= this.filter.distance){
                                     tutorData.distanceBetween = distance;
                                     this.getTuitionTimeslots(tutorData);
-                                    this.filteredTutors = []
-
                                 }
                             }    
+                            this.filteredTutors = []
+
                         }
                     }
                     else{
