@@ -664,6 +664,13 @@ export default {
         background: whitesmoke !important;
       }
 
+      .card-display:hover {
+        transform: scale(1.05);
+      }
+      .card-display {
+        transition: transform 0.5s;
+      }
+
 
       /* Tutor Profile Display */
       .card-display {
@@ -704,7 +711,7 @@ export default {
           top: 0;
           height: 100%;
           width: 100%;
-          background-color: #4070F4;
+          background-color: #98E4FF;
           border-radius: 25px 25px 0 25px;
       }
 
@@ -716,7 +723,7 @@ export default {
           bottom: -40px;
           height: 40px;
           width: 40px;
-          background-color: #4070F4;
+          background-color: #98E4FF;
       }
 
       .overlay::after {
