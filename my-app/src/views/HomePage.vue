@@ -380,14 +380,14 @@ export default {
 
                 if(timeSlot.length > 0){
                     if(this.filteredButton){
-                        if(!this.filteredTutors.some((tutor) => tutor.id === tutorData.userID)){
+                        if(!this.filteredTutors.each((tutor) => tutor.id === tutorData.userID)){
                             tutorData.tuitionTimeslots = timeSlot;
                             this.filteredTutors.push(tutorData);
                             this.filteredTutors.sort((a, b) => a.distanceBetween - b.distanceBetween);
                         }
                     }
                     else{
-                        if(!this.recommendedTutors.some((tutor) => tutor.id === tutorData.userID)){
+                        if(!this.recommendedTutors.each((tutor) => tutor.id === tutorData.userID)){
                             tutorData.tuitionTimeslots = timeSlot;
                             this.recommendedTutors.push(tutorData);
                             this.recommendedTutors.sort((a, b) => a.distanceBetween - b.distanceBetween);
