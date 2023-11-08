@@ -546,6 +546,8 @@ export default {
                                     this.getTuitionTimeslots(tutorData);
                                 }
                             }
+                            this.filteredTutors = []
+
                         }
                     }
 
