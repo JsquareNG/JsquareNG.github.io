@@ -502,7 +502,6 @@ export default {
             const tutorsCollection = collection(db, 'tutors')
             let filtered = query(tutorsCollection)
             
-
             if(this.filter.level && this.filter.level !== 'any'){
                 filtered = query(filtered, where('teaches','array-contains', this.filter.level))
             }
@@ -520,16 +519,17 @@ export default {
                             if(this.filter.distance === ""){
                                 tutorData.distanceBetween = distance;
                                 this.getTuitionTimeslots(tutorData);
+                                this.filteredTutors = []
                             }
                             else{
                                 if(distance <= this.filter.distance){
                                     tutorData.distanceBetween = distance;
                                     this.getTuitionTimeslots(tutorData);
-                                }
-                            }
-                            
-                        }
+                                    this.filteredTutors = []
 
+                                }
+                            }    
+                        }
                     }
                     else{
                         if(tutorData.subjects.includes(this.filter.subject)){
