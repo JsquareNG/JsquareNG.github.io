@@ -12,7 +12,7 @@
       <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
         <div class="img-left d-none d-md-flex"></div>
         <div class="card-body">
-          <h3 class="title text-center mt-4 font-weight-bold">
+          <h3 class="title text-center mt-4">
             <strong>Login</strong>
           </h3>
           <form class="form-box px-3" @submit.prevent="login">
