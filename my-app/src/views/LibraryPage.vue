@@ -258,6 +258,9 @@ export default {
         }
         
     },
+    mounted() {
+        this.getResource()
+    },
     watch: {
         'filter.level': function (newLevel) {
             if (newLevel !== '') {
