@@ -59,7 +59,7 @@
             </div>
         </div>
     </section>
-    <div class="container table-box">
+    <div class="container table-box mb-3">
         <table v-if="!isVisible" class="table table-bordered text-center shadow table-customer">
             <thead>
                 <tr>
