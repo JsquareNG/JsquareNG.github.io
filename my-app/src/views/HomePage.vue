@@ -55,10 +55,10 @@
     
 
 
-    <div class="container-fluid my-5">
-        <div class="row p mx-4 justify-content-around">
+    <div class="container my-5">
+        <div class="row p mx-2 justify-content-around">
             <!-- START HERE -->
-            <div class="col-lg-10 col-sm-12 py-1 bg-light border tutor-display mt-2">
+            <div class="col-lg-9 col-sm-12 py-1 bg-light border tutor-display mt-2 me-3">
                 <div v-if="!filteredButton">
                     <div v-if="recommendedTutors.length === 0" class="row justify-content-center text-center">
                         <img class="no-result-img" src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png"  alt="">
@@ -79,7 +79,7 @@
                                 <h1 class="name text-dark">{{tutor.name}}</h1>
                                 <div class="subjects text-center">
                                     <h5 >I'm efficient in teaching:</h5>
-                                    <button class="btn btn-warning m-1" disabled v-for="subject in tutor.subjects" :key="subject">
+                                    <button class="btn btn-warning m-1" style="font-size: 14px;" disabled v-for="subject in tutor.subjects" :key="subject">
                                         {{subject}}
                                     </button>
                                 </div>
@@ -195,7 +195,7 @@
                 </div>
                     
             </div>
-            <div class="col-lg-1 col-12 upcoming-request"> 
+            <div class="col-lg-2 col-12 upcoming-request"> 
                 <div class="row text-center">
                     <div class="container-fluid bg-light py-1  upcoming-box border mt-2">
                         <h5 style="font-weight: 600;">Upcoming Sessions</h5>
@@ -711,7 +711,7 @@ export default {
           top: 0;
           height: 100%;
           width: 100%;
-          background-color: #98E4FF;
+          background-color: #AEDEFC;
           border-radius: 25px 25px 0 25px;
       }
 
@@ -723,7 +723,7 @@ export default {
           bottom: -40px;
           height: 40px;
           width: 40px;
-          background-color: #98E4FF;
+          background-color: #AEDEFC;
       }
 
       .overlay::after {
@@ -798,6 +798,27 @@ export default {
 
       #button {
         width: 85px;
+      }
+
+      button:hover {
+        background-position: right center;
+        background-size: 200% auto;
+        -webkit-animation: pulse 2s infinite;
+        animation: pulse512 1.5s infinite;
+      }
+
+      @keyframes pulse512 {
+        0% {
+          box-shadow: 0 0 0 0 #05bada66;
+        }
+
+        70% {
+          box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+        }
+
+        100% {
+          box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+        }
       }
 
       @media (max-width: 768px) {
