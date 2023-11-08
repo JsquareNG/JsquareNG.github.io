@@ -47,7 +47,7 @@
                 <div class="col-md-8 col-10 z-index-3">
                     <div class="p-3 border mb-3 bg-white border rounded-custom shadowed-container">
                         <h3 class="text-center">Upload a File</h3>
-                        <form>
+                        <form @submit="uploadFile">
                             <div class="mb-3">
                                 <label for="title" class="form-label">Title</label>
                                 <input type="text" v-model="form.title" class="form-control" id="title" name="title" required>
@@ -79,7 +79,7 @@
                                 </select>
                             </div>
                             <div class="text-center">
-                                <button type="button" @click="uploadFile" class="btn btn-primary">Upload</button>
+                                <button type="submit" class="btn btn-primary">Upload</button>
                             </div>
                         </form>
                     </div>
@@ -136,7 +136,8 @@ export default {
                 
             },
     
-        uploadFile: function() {
+        uploadFile(event) {
+            event.preventDefault()
             const storageRef = ref(storage, 'resource/' + this.form.title +".pdf")
             
             uploadBytes(storageRef, this.$refs.fileName.files[0])
