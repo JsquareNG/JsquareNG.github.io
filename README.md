@@ -5,7 +5,7 @@
 Landing Page: https://jsquare-ng-github-io.vercel.app/
 
 
-Parent Interface:
+Parent (Jing Jie) Interface:
 Username: test123@gmail.com
 Password: test123
 
@@ -14,7 +14,7 @@ Password: test123
 Username: test234@gmail.com
 Password: test234
 
-2nd Account (Tutor Hyun Bin):
+2nd Account (Tutor Hyun Bin) Interface:
 Username: test000@gmail.com
 Password: test000
 
