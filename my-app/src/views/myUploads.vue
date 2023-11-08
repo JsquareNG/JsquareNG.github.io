@@ -144,7 +144,6 @@ export default {
                 return getDownloadURL(storageRef)
             })
             .then((url) => {
-                console.log(url)
                 this.file_url = url
                 addDoc(collection(db,'resource'),{
                     title: this.form.title,
@@ -156,8 +155,9 @@ export default {
                 })
                 alert("File Uploaded Successfully")
                 this.form.title = '';
-                this.$refs.fileName = '';
-                this.$refs.fileName.value = '';
+                // this.$refs.fileName = '';
+                // this.$refs.fileName.value = '';
+                this.file.url = '';
                 this.form.type = '';
                 this.form.subjectLevel = '';
                 this.form.selectedSubject = '';
