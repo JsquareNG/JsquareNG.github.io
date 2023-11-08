@@ -396,8 +396,7 @@ export default {
                     
                     
                 }
-                this.filteredTutors = []
-                this.recommendedTutors = []
+       
             });
         },
         resetSelected(){
