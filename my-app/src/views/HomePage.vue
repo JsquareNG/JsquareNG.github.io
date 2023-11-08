@@ -55,7 +55,7 @@
     
 
 
-    <div class="container my-5">
+    <div class="container-fluid my-5">
         <div class="row py-2 mx-2 justify-content-around">
             <!-- START HERE -->
             <div class="col-lg-9 col-sm-12 py-1 bg-light border tutor-display mt-2 me-3">
