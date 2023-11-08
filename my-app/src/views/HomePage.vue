@@ -67,8 +67,8 @@
                     </div>
                     <div v-else class="row p-3 justify-content-around text-center">
                         <h4 style="font-weight: bold">Our Recommended Tutors</h4>
-                        <div class="col-lg-3 col-md-5 col-12 my-2" v-for="tutor in recommendedTutors" :key="tutor.userID">
-                            <div class="card-display my-2">
+                        <div class="col-lg-3 col-md-5 col-12 my-3" v-for="tutor in recommendedTutors" :key="tutor.userID">
+                            <div class="card-display my-3">
                             <div class="image-content">
                                 <span class="overlay"></span>
                                 <div class="card-image">
@@ -134,8 +134,8 @@
                     </div>
                     <div v-else class="row p-3 justify-content-around text-center">
                         <h4 style="font-weight: bold">Our Filtered Results</h4>
-                        <div class="col-lg-3 col-md-5 col-12 my-2" v-for="tutor in filteredTutors" :key="tutor.userID">
-                            <div class="card-display my-2">
+                        <div class="col-lg-3 col-md-5 col-12 my-3" v-for="tutor in filteredTutors" :key="tutor.userID">
+                            <div class="card-display my-3">
                             <div class="image-content">
                                 <span class="overlay"></span>
                                 <div class="card-image">
